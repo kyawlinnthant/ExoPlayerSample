@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav"
+    app:startDestination="@id/home">
+
+    <fragment
+        android:id="@+id/home"
+        android:name="klt.mdy.exoplayersample.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/home_fragment">
+        <action
+            android:id="@+id/action_homeFragment_to_audioPlayerFragment"
+            app:destination="@id/audio" />
+        <action
+            android:id="@+id/action_homeFragment_to_videoPlayerFragment"
+            app:destination="@id/video" />
+    </fragment>
+    <fragment
+        android:id="@+id/audio"
+        android:name="klt.mdy.exoplayersample.AudioPlayerFragment"
+        android:label="Audio"
+        tools:layout="@layout/audio_player_fragment" />
+    <fragment
+        android:id="@+id/video"
+        android:name="klt.mdy.exoplayersample.VideoPlayerFragment"
+        android:label="Video"
+        tools:layout="@layout/video_player_fragment" />
+</navigation>

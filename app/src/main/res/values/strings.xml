@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ExoPlayerSample</string>
+    <string name="audio">Audio</string>
+    <string name="video">Video</string>
+    <string name="audio_url">Audio Url</string>
+    <string name="video_url">Video Url</string>
+</resources>
